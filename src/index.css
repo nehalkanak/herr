@@ -1,0 +1,118 @@
+body {
+  background-image: url("https://media1.tenor.com/m/cA57Eoie-wYAAAAd/hello-kitty-dear-daniel.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.romantic-bg {
+  height: 100vh;
+  width: 100%;
+  background: url('https://media.tenor.com/Q1YtVJvGjVwAAAAC/hello-kitty-love.gif') center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  background: rgba(255, 182, 193, 0.35);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid pink;
+  animation: caret 0.75s step-end infinite;
+}
+
+@keyframes caret {
+  50% { border-color: transparent; }
+}
+
+.floating-heart {
+  position: fixed;
+  bottom: 0;
+  font-size: 2rem;
+  animation: floatUp 4s linear forwards;
+  color: pink;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+
+.sticker {
+  width: 120px;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.s1 { top: 10%; left: 5%; }
+.s2 { bottom: 10%; right: 5%; }
+
+.buttons-fixed {
+  margin-top: 30px;
+  position: relative;
+  height: 160px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  z-index: 2;
+}
+
+.btn.yes {
+  background: #ffb6c1;
+  color: #8b004b;
+  box-shadow: 0 0 15px pink;
+}
+
+.btn.no {
+  background: #ffd1d9;
+  color: #a3002b;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.sparkle {
+  animation: sparkleGlow 2s infinite alternate;
+}
+
+@keyframes sparkleGlow {
+  from { box-shadow: 0 0 20px hotpink; }
+  to { box-shadow: 0 0 40px hotpink; }
+}
+
+.love-screen {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 20px hotpink;
+}
+
+.button-container { width:300px; margin:0 auto; display:flex; justify-content:space-between; }
+#no-btn{ position:absolute; }
+
+.love-screen h1, .love-screen p { color: #ff1493 !important; }
